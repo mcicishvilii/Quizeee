@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/drawable/rounded_corner.xml" value="0.2525" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/fragment_congrats.xml" value="0.371875" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/fragment_questions.xml" value="0.33" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/fragment_quiz_prepare.xml" value="0.371875" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/fragment_quiz_questions.xml" value="2.23125" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/fragment_quiz_welcome_activity.xml" value="0.371875" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/fragment_second_question.xml" value="0.371875" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/layout_questions.xml" value="0.33" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/quiz_prepare_fragment.xml" value="0.371875" />
+        <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/quiz_welcome_activity.xml" value="0.371875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
