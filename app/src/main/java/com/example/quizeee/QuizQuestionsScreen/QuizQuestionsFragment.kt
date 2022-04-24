@@ -4,16 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.quizeee.CongratsScreen.CongratsFragment
+import com.example.quizeee.LayoutQuestionsFragment.QuestionLayoutFragment
 import com.example.quizeee.Questions
 import com.example.quizeee.QuizQuestionsAdapter
 import com.example.quizeee.R
 import com.example.quizeee.databinding.FragmentQuestionsBinding
 
 class QuizQuestionsFragment:Fragment(){
+
+
     private val binding get () = _binding!!
     private var _binding:FragmentQuestionsBinding? = null
 
@@ -26,9 +30,13 @@ class QuizQuestionsFragment:Fragment(){
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         binding.rvQuestions.layoutManager =
-            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL,false)
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+
+
 
         binding.rvQuestions.adapter = QuizQuestionsAdapter(
             mutableListOf(
@@ -38,7 +46,8 @@ class QuizQuestionsFragment:Fragment(){
                     "Commit",
                     "Add",
                     "addToBackStack",
-                    1
+                    1,
+                    "Replace"
                 ),
                 Questions(
                     "როგორ უნდა მივწვდეთ fragmentManager ს ფრაგმენტში",
@@ -46,7 +55,8 @@ class QuizQuestionsFragment:Fragment(){
                     "parentFragmentManager",
                     "supportFragmentManager",
                     "requireFragmentManager",
-                    2
+                    2,
+                    "supportFragmentManager"
                 ),
                 Questions(
                     "რომელი მეთოდი იძახება ფრაგმენტში ყველაზე ადრე",
@@ -54,50 +64,43 @@ class QuizQuestionsFragment:Fragment(){
                     "onPause",
                     "onCreate",
                     "onCreateView",
-                    3
+                    3,
+                    "onCreate"
                 ),
                 Questions(
-                    "რომელ მეთოდში უნდა დავწეროთ ძირითადი კოდი ფრაგმენტში",
+                    "რომელ მეთოდში უნდა გავანულოთ binding ცვლადი",
                     "onDestroy",
                     "onDestroyView",
                     "onPause",
                     "onStop",
-                    4
-                ),
-                Questions(
-                    "სად უნდა გამოვაცხადოთ სტატიკური მეთოდები კოტლინში",
-                    "onPause",
-                    "onCreate",
-                    "onCreateView",
-                    "onViewCreated",
-                    5
-                ),
-                Questions(
-                    "რომელი ტიპი უნდა გადავაწოდოთ ფრაგმენტს არგუმენტად",
-                    "Bundle",
-                    "Pair",
-                    "String",
-                    "Char",
-                    6
+                    4,
+                    "onDestroyView"
                 ),
 
-
-            )
+                )
         ).apply {
-            binding.btnNextQuestion.setOnClickListener {
+            setOnItemCLickListener { question: Questions, i: Int ->
                 parentFragmentManager.beginTransaction().apply {
-                    replace(R.id.flContent, SecondQuestionFragment())
-                    addToBackStack(CongratsFragment::javaClass.name)
+                    replace(
+                        R.id.flContent,
+                        QuestionLayoutFragment.newInstance(question.correctAnswer)
+                    )
+                    addToBackStack(QuestionLayoutFragment::javaClass.name)
                     commit()
+
                 }
             }
         }
+
     }
-
-
     override fun onDestroyView() {
         _binding = null
         super.onDestroyView()
     }
 }
+
+
+
+
+
 
