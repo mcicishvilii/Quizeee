@@ -14,6 +14,16 @@
         <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/layout_questions.xml" value="0.33" />
         <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/quiz_prepare_fragment.xml" value="0.371875" />
         <entry key="..\:/Users/usmd 2022/AndroidStudioProjects/Quizeee/app/src/main/res/layout/quiz_welcome_activity.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.1665" />
+        <entry key="app/src/main/res/drawable/rounded_corner_unselected.xml" value="0.1665" />
+        <entry key="app/src/main/res/drawable/selector_answer_bg.xml" value="0.1665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_congrats.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_questions.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_quiz_prepare.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_quiz_welcome_activity.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/layout_answer_item.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/layout_questions.xml" value="0.37604166666666666" />
       </map>
     </option>
   </component>

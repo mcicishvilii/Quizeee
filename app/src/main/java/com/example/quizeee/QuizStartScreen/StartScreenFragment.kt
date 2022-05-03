@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.quizeee.MainActivity
 import com.example.quizeee.QuizPrepareScreen.QuizPrepareFragment
 import com.example.quizeee.R
 import com.example.quizeee.databinding.FragmentQuizWelcomeActivityBinding
@@ -26,11 +27,7 @@ class StartScreenFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.TVTipText.setOnClickListener {
-            parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flContent, QuizPrepareFragment())
-                addToBackStack(QuizPrepareFragment::javaClass.name)
-                commit()
-            }
+            ( requireActivity() as MainActivity).onNextClicked(0,false )
         }
     }
 
